@@ -8,16 +8,18 @@ public class Employer extends JobField {
 //    private static int nextId = 1;
 //    private String value;
 
-    public Employer() {
-        id = nextId;
-        nextId++;
-    }
-
-    public Employer(String value) {
-        this();
-        this.value = value;
-    }
-
+//    public Employer() {
+//        id = nextId;
+//        nextId++;
+//    }
+//
+//    public Employer(String value) {
+//        this();
+//        this.value = value;
+//    }
+public Employer(String value) {
+    super(value);
+}
     // Custom toString, equals, and hashCode methods:
 // Now handled by JobField class
 //    @Override
@@ -40,19 +42,19 @@ public class Employer extends JobField {
 
     // Getters and Setters:
 
-    public int getId() {
-        return id;
-    }
+//    public int getId() {
+//        return id;
+//    }
+//
+//    public String getValue() {
+//        if (value == null || value.isEmpty()) {
+//            return "Data not available";
+//        }
+//        return value;
+//    }
 
-    public String getValue() {
-        if (value == null || value.isEmpty()) {
-            return "Data not available";
-        }
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
-
+//   public void setValue(String value) {
+//       this.value = value;
+//    }
+//
 }
